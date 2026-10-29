@@ -250,6 +250,40 @@ LIMIT 3;
 
 Note: `shipped_date` is a DATE column and the fallback is text. MySQL converts both to text for the result, so this is fine for display but should not be used for later date calculations.
 
+```sql
+create database sql_practice;
+use sql_practice;
+CREATE TABLE customers (
+    customer_id INT PRIMARY KEY,
+    customer_name VARCHAR(100),
+    phone_no VARCHAR(15),
+    alternative_phone_no VARCHAR(15),
+    email VARCHAR(100),
+    alternative_email VARCHAR(100)
+);
+```
+
+```sql
+INSERT INTO customers
+(customer_id, customer_name, phone_no, alternative_phone_no, email, alternative_email)
+VALUES
+(1, 'Amit Sharma', '9876543210', '9123456780', 'amit@gmail.com', 'amit.work@gmail.com'),
+(2, 'Priya Verma', NULL, '9234567890', 'priya@gmail.com', NULL),
+(3, 'Rahul Singh', '9345678901', NULL, NULL, 'rahul.work@gmail.com'),
+(4, 'Neha Joshi', NULL, NULL, 'neha@gmail.com', NULL),
+(5, 'Vikas Mehta', '9456789012', '9567890123', NULL, NULL),
+(6, 'Pooja Rathore', NULL, '9678901234', NULL, 'pooja.work@gmail.com'),
+(7, 'Rohit Kumar', '9789012345', NULL, 'rohit@gmail.com', NULL),
+(8, 'Anjali Gupta', NULL, NULL, NULL, NULL),
+(9, 'Suresh Patel', '9890123456', '9901234567', 'suresh@gmail.com', NULL),
+(10, 'Kavita Jain', NULL, '9012345678', 'kavita@gmail.com', 'kavita.work@gmail.com'),
+(11, 'Manish Yadav', '9123456701', NULL, NULL, NULL),
+(12, 'Simran Kaur', NULL, NULL, 'simran@gmail.com', NULL),
+(13, 'Deepak Saini', '9234567012', '9345678012', NULL, 'deepak.work@gmail.com'),
+(14, 'Ritu Choudhary', NULL, '9456780123', NULL, NULL),
+(15, 'Arjun Malhotra', '9567801234', NULL, 'arjun@gmail.com', 'arjun.work@gmail.com');
+```
+
 ### NULLIF: return NULL when two values are equal
 
 `NULLIF(a, b)` means: return NULL if `a = b`; otherwise return `a`. It is most useful for avoiding division by zero:
