@@ -284,6 +284,19 @@ VALUES
 (15, 'Arjun Malhotra', '9567801234', NULL, 'arjun@gmail.com', 'arjun.work@gmail.com');
 ```
 
+```sql
+SELECT 
+    *,
+    COALESCE(phone_no,
+            alternative_phone_no,
+            email,
+            alternative_email,
+            'na'
+	)
+FROM
+    customers;
+```
+  
 ### NULLIF: return NULL when two values are equal
 
 `NULLIF(a, b)` means: return NULL if `a = b`; otherwise return `a`. It is most useful for avoiding division by zero:
