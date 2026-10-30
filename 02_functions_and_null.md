@@ -344,6 +344,32 @@ Without `NULLIF`, MySQL also returns NULL for `100 / 0` (with a warning), but ot
 	2. full name in lowercase
 	3. Masked Phone numbers  (last 5 digit hidden)  example : 9876543210 - > 98765...
 
+ 7. Write an SQL query to fetch the following details from the orders_table:
+	1. order_id
+	2. customer_id
+	3. order_date
+	4. order_month – extract the month from order_date.
+	5. order_year – extract the year from order_date.
+	6. day_name – extract the day name (Monday, Tuesday, etc.) from order_date.
+	7. day_tag – classify each order as 'Weekday' or 'Weekend' based on day_name.
+	8. delivery_time – calculate the number of days taken for delivery by finding
+	   the difference between shipped_date and order_date.
+
+8. Write an SQL query to fetch the following details from the order_items table:
+	1. order_id
+	2. product_id
+	3. quantity
+	4. list_price_rounded_up – round up list_price to 0 decimal places.
+	5. discounted_price_rounded_down – calculate the price after applying the discount and round it down to 0 decimal places.
+	6. sales – calculate the total sales amount using the following formula and round the result to 2 decimal places.
+	Formula:
+	\[
+	Sales = list\_price \times quantity \times (1 - discount)
+	\]
+
+	Note: Use appropriate SQL mathematical functions such as CEIL(), FLOOR(), and ROUND() to achieve the required output.
+
+
 <details>
 <summary>Answers</summary>
 
