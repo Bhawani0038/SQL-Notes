@@ -363,9 +363,8 @@ Without `NULLIF`, MySQL also returns NULL for `100 / 0` (with a warning), but ot
 	5. discounted_price_rounded_down – calculate the price after applying the discount and round it down to 0 decimal places.
 	6. sales – calculate the total sales amount using the following formula and round the result to 2 decimal places.
 	Formula:
-	\[
-	Sales = list\_price \times quantity \times (1 - discount)
-	\]
+	<img width="533" height="60" alt="image" src="https://github.com/user-attachments/assets/d3cbefe9-bcda-488e-b351-063bd36ff7d6" />
+
 
 	Note: Use appropriate SQL mathematical functions such as CEIL(), FLOOR(), and ROUND() to achieve the required output.
 
