@@ -326,6 +326,23 @@ Without `NULLIF`, MySQL also returns NULL for `100 / 0` (with a warning), but ot
 1. Show each staff member's `full_name` (first + last) and email domain.
 2. Show the `order_id` values for orders shipped after `required_date` (late shipments), along with the number of days late. Show only 5.
 3. Replace `customers.phone` with 'N/A' using `COALESCE`, and show `city` in uppercase (show only 5).
+4. Write an SQL query to fetch the following details from the customer table:
+	1. customer_id
+	2. full_name in uppercase.
+	3. phone_no – display 'NA' if the phone number is NULL.
+	4. user_name extracted from the email address.
+	5. domain_name extracted from the email address.
+	6. complete_address in the format: city-state-zip_code.
+
+
+5. Write an SQL query to fetch the following details from the categories table:
+	1. category_id,
+	2. category name where replace 'Bicycles' word with 'MotorCycles';
+
+6. Write an SQL query to fetch the following details from the customer table:
+	1. customer_id
+	2. full name in lowercase
+	3. Masked Phone numbers  (last 5 digit hidden)  example : 9876543210 - > 98765...
 
 <details>
 <summary>Answers</summary>
