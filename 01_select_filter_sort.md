@@ -525,6 +525,26 @@ Reason: `WHERE` runs first, and the alias is created later by `SELECT`. Fix: wri
 2. Show customers whose email ends with `@gmail.com` (only the first 5).
 3. Show `order_id`, `order_date`, and `shipped_date` for orders where `shipped_date` is NULL, newest `order_date` first; show only 5.
 
+## SQL Practice Questions Part-2
+
+Q1. Write an SQL query to retrieve all records from the categories table.
+
+Q2. Write an SQL query to retrieve all records from the products table where brand_id is equal to 4.
+
+Q3. Write an SQL query to display the product names and their list prices for all products manufactured in the year 2017.
+
+Q4. Write an SQL query to retrieve the 5 most expensive products based on their list prices.
+
+Q5. Write an SQL query to retrieve all products whose list prices are between 3000 and 6000 (inclusive).
+
+Q6. Write an SQL query to find the second least expensive product based on its list price.
+
+Q7. Write an SQL query to retrieve all customers whose email addresses belong to the yahoo.com domain.
+
+Q8. Write an SQL query to retrieve all customers from the state of California whose phone numbers are missing (NULL).
+
+Q9. Write an SQL query to retrieve all customers from New York whose email addresses belong to the hotmail.com domain.
+
 <details>
 <summary>Answers</summary>
 
